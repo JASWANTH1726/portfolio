@@ -54,7 +54,7 @@ def index():
             new_url = URL(long_url=long_url, short_code=short_code)
             db.session.add(new_url)
             db.session.commit()
-        short_url = request.host_url + short_code
+        short_url = 'https://urlproj.netlify.app/' + short_code
     return render_template_string(HTML_TEMPLATE, short_url=short_url)
 
 @app.route('/<short_code>')
