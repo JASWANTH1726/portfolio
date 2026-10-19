@@ -1,120 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buddha Jaswanth Jai | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="hero">
-    <div class="hero__content hero__profile">
-      <figure class="profile-photo">
-        <img src="assets/profile.jpg" alt="Buddha Jaswanth Jai" />
-        <figcaption>B.Tech CSE (AI & ML)</figcaption>
-      </figure>
-
-      <div class="hero__details">
-        <p class="eyebrow">Portfolio</p>
-        <h1>Buddha Jaswanth Jai</h1>
-        <p class="hero__text">B.Tech CSE (AI & ML) student at Teerthanker Mahaveer University, building web applications and backend systems with Flask, SQLite, and project-based learning through CodeAlpha.</p>
-        <ul class="hero__meta">
-          <li>Project: Student Link Manager & URL Shortener</li>
-          <li>Guide: Mr. Mohit Mishra</li>
-          <li>Institute: Teerthanker Mahaveer University, Moradabad</li>
-        </ul>
-        <div class="hero__buttons">
-          <a class="button button--primary" href="assets/resume.pdf" download>Download Resume</a>
-          <a class="button" href="#projects">View Projects</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Buddha Jaswanth Jai is a Computer Science Engineering student specializing in AI/ML, web development, and digital experiences." />
+    <meta name="theme-color" content="#f1e8dd" />
+    <title>Buddha Jaswanth Jai | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-loading">
+    <div class="loader" aria-live="polite" aria-label="Loading portfolio">
+      <div class="loader__inner">
+        <svg class="loader__ring" viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="loader__ring-bg" cx="60" cy="60" r="47"></circle>
+          <circle class="loader__ring-fill" cx="60" cy="60" r="47"></circle>
+        </svg>
+        <div class="loader__count" data-progress>00%</div>
+        <div class="loader__hello">hello</div>
       </div>
     </div>
-  </header>
 
-  <main>
-    <section class="section about" id="about">
-      <div class="section__content">
-        <h2>About Me</h2>
-        <p>I am a dedicated B.Tech student specializing in Artificial Intelligence and Machine Learning. I completed CodeAlpha internship training and developed a Flask-based URL shortener as part of my industrial training project.</p>
-        <ul class="about-list">
-          <li>Degree: B.Tech CSE (AI & ML)</li>
-          <li>Training: CodeAlpha internship and IBM certification series</li>
-          <li>Project focus: backend routing, database modeling, and user-friendly web interfaces</li>
-        </ul>
-      </div>
-    </section>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav">
+          <a class="brand" href="#home" aria-label="Go to home">BJJ</a>
+          <nav class="nav-links" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="tiny-link" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </header>
 
-    <section class="section education" id="education">
-      <div class="section__content">
-        <h2>Education</h2>
-        <p>Currently pursuing Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Teerthanker Mahaveer University, Moradabad.</p>
-        <ul class="about-list">
-          <li>Institution: Teerthanker Mahaveer University</li>
-          <li>Program: B.Tech CSE (AI & ML)</li>
-          <li>Project: Student Link Manager & URL Shortener</li>
-          <li>Guide: Mr. Mohit Mishra</li>
-        </ul>
-      </div>
-    </section>
+      <main id="home">
+        <section class="hero">
+          <div class="container hero__inner">
+            <div class="hero__copy reveal" data-reveal>
+              <div class="hero__eyebrow">Computer Science Engineering Student • AI/ML • Web Developer</div>
+              <h1 class="headline" aria-label="Creative Developer">
+                <span class="headline__line headline__line--primary">CREATIVE</span>
+                <span class="headline__line headline__line--secondary">DEVELOPER</span>
+              </h1>
+              <p class="intro">
+                I build digital experiences where design, technology, and practical problem-solving meet. My work blends web development, AI/ML interest, and a continuous drive to learn by building.
+              </p>
+              <div class="hero__actions">
+                <a class="button button--primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+                <a class="button button--secondary" href="https://github.com/JASWANTH1726" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <div class="hero__meta">
+                <span>Teerthanker Mahaveer University</span>
+                <span>B.Tech CSE (AI &amp; ML)</span>
+              </div>
+            </div>
 
-    <section class="section skills" id="skills">
-      <div class="section__content">
-        <h2>Skills</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Web Fundamentals</h3>
-            <p>HTML, CSS, responsive design, user-friendly layout.</p>
+            <div class="hero__aside reveal" data-reveal>
+              <div class="seal" aria-hidden="true">
+                <span>BUILD</span>
+              </div>
+              <div class="portrait-card">
+                <img src="assets/profile.jpg" alt="Buddha Jaswanth Jai portrait" />
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3>Backend Development</h3>
-            <p>Flask web apps, SQLite data models, URL routing, and redirection logic.</p>
+        </section>
+
+        <section class="section dark about" id="about">
+          <div class="container two-column">
+            <div class="section-header reveal" data-reveal>
+              <p class="kicker">About</p>
+              <h2>ABOUT ME</h2>
+            </div>
+
+            <div class="section-body reveal" data-reveal>
+              <p class="lead">I build digital experiences where design meets code.</p>
+              <p>
+                I am a Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning, with a growing interest in web development, software craftsmanship, and digital product thinking.
+              </p>
+              <p>
+                Through my academic learning and project work, I have developed a strong foundation in Python, web development, backend logic, and structured application building. I enjoy creating interfaces and systems that are useful, simple, and thoughtfully designed.
+              </p>
+              <ul class="bullet-list">
+                <li>Education: B.Tech in Computer Science and Engineering (AI &amp; ML)</li>
+                <li>University: Teerthanker Mahaveer University</li>
+                <li>Interests: Web development, AI/ML, software engineering</li>
+              </ul>
+            </div>
           </div>
-          <div class="card">
-            <h3>Project Delivery</h3>
-            <p>Project planning, documentation, and implementation of internship deliverables.</p>
+        </section>
+
+        <section class="section dark expertise" id="expertise">
+          <div class="container">
+            <div class="section-header reveal" data-reveal>
+              <p class="kicker">Expertise</p>
+              <h2>SKILLS</h2>
+            </div>
+
+            <div class="expertise__grid reveal" data-reveal>
+              <article class="expertise__item">
+                <span class="expertise__num">01</span>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, responsive layouts, UI structure, and user-centered front-end thinking.</p>
+              </article>
+
+              <article class="expertise__item">
+                <span class="expertise__num">02</span>
+                <h3>Backend</h3>
+                <p>Flask applications, database handling, routing, and logic-driven web systems.</p>
+              </article>
+
+              <article class="expertise__item">
+                <span class="expertise__num">03</span>
+                <h3>Programming</h3>
+                <p>Python, Java, C, C++, and JavaScript fundamentals for problem-solving and web work.</p>
+              </article>
+
+              <article class="expertise__item">
+                <span class="expertise__num">04</span>
+                <h3>AI / ML</h3>
+                <p>Concepts in artificial intelligence, machine learning, and analytical thinking.</p>
+              </article>
+
+              <article class="expertise__item">
+                <span class="expertise__num">05</span>
+                <h3>Tools</h3>
+                <p>Git, GitHub, project documentation, and structured development workflow.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section dark work" id="work">
+          <div class="container">
+            <div class="section-header reveal" data-reveal>
+              <p class="kicker">Selected Work</p>
+              <h2>PROJECTS</h2>
+            </div>
+
+            <article class="project reveal" data-reveal>
+              <div class="project__number">01</div>
+              <div class="project__content">
+                <div class="project__meta">
+                  <span class="tag">Featured</span>
+                  <span class="tag tag--muted">Python • Flask • Flask-SQLAlchemy • SQLite • Jinja</span>
+                </div>
+                <h3>Student Link Manager &amp; URL Shortener</h3>
+                <p>
+                  A Python and Flask URL-shortening app that generates unique six-character links and redirects users to the original URLs.
+                </p>
+                <ul class="bullet-list bullet-list--compact">
+                  <li>Flask-SQLAlchemy and SQLite provide persistent storage and duplicate-link lookup.</li>
+                  <li>Jinja templates render the link submission form and short-link result.</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://urlproj.netlify.app" target="_blank" rel="noreferrer">Live Demo</a>
+                  <a href="assets/CodeAlpha_project" download>Download Project</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal" data-reveal>
+              <div class="project__number">02</div>
+              <div class="project__content">
+                <div class="project__meta">
+                  <span class="tag">Full-Stack News Aggregator</span>
+                  <span class="tag tag--muted">React • Vite • Node.js • Express</span>
+                  <span class="tag tag--muted">MongoDB Atlas • JWT • NewsAPI • RSS</span>
+                </div>
+                <h3>NewsHub</h3>
+                <p>
+                  A full-stack news platform with a React and Vite frontend, Express REST API, and MongoDB Atlas data layer.
+                </p>
+                <p>
+                  Tech stack: React 18, Vite, React Router, Axios, CSS Modules, Node.js, Express.js, MongoDB Atlas, Mongoose, JWT, bcryptjs, NewsAPI, and RSS Parser. Deployed on Vercel and Render.
+                </p>
+                <ul class="bullet-list bullet-list--compact">
+                  <li>Combines NewsAPI and RSS sources for personalized multilingual news feeds and keyword-based recommendations.</li>
+                  <li>Uses JWT authentication; frontend deployed on Vercel and backend on Render.</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://newshub-django.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
+                  <a href="https://github.com/JASWANTH1726/newshub" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section dark credentials" id="credentials">
+          <div class="container">
+            <div class="section-header reveal" data-reveal>
+              <p class="kicker">Credentials</p>
+              <h2>CERTIFICATIONS</h2>
+            </div>
+
+            <div class="timeline reveal" data-reveal>
+              <article class="timeline__item">
+                <span class="timeline__year">Bluestock Fintech</span>
+                <div>
+                  <h3>Data Analyst Internship</h3>
+                  <p>Internship completed from 24 July to 24 September 2026.</p>
+                  <div class="project__links">
+                    <a href="assets/BFDA103575.jpg" target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">IBM</span>
+                <div>
+                  <h3>Big Data for Beginner – 3C Learning Path</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">IIT Bombay Spoken Tutorial</span>
+                <div>
+                  <h3>Java Training Certificate</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">Acmegrade · Mood Indigo, IIT Bombay</span>
+                <div>
+                  <h3>Artificial Intelligence Training</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">AICTE · Shell India · Edunet Foundation</span>
+                <div>
+                  <h3>Artificial Intelligence &amp; Data Analytics Internship Certificate</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">CodeAlpha</span>
+                <div>
+                  <h3>Backend Development Internship Completion Certificate</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">CodeAlpha</span>
+                <div>
+                  <h3>Backend Development Participation Certificate</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">LetsUpgrade</span>
+                <div>
+                  <h3>HTML &amp; CSS Bootcamp Certificate</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">Deloitte · Forage</span>
+                <div>
+                  <h3>Data Analytics Job Simulation Certificate</h3>
+                </div>
+              </article>
+
+              <article class="timeline__item">
+                <span class="timeline__year">RINL · Visakhapatnam Steel Plant</span>
+                <div>
+                  <h3>Full Stack Development – J2EE &amp; Web 2.0 Technologies Internship/Project Certificate</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section resume">
+          <div class="container resume-box reveal" data-reveal>
+            <div>
+              <p class="kicker">Resume</p>
+              <h2>MY RESUME</h2>
+            </div>
+            <a class="button button--primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+          </div>
+        </section>
+
+        <section class="section dark contact" id="contact">
+          <div class="container contact-box reveal" data-reveal>
+            <p class="kicker">Contact</p>
+            <h2>LET'S CREATE SOMETHING MEANINGFUL.</h2>
+            <p>Open to project discussions, internships, and creative collaborations.</p>
+            <div class="contact-actions">
+              <a class="button button--primary" href="mailto:jaswanthjai1726@gmail.com">Email Me</a>
+              <a class="button button--secondary" href="https://github.com/JASWANTH1726" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <p>© <span id="year"></span> Buddha Jaswanth Jai</p>
+          <div class="footer__links">
+            <a href="https://github.com/JASWANTH1726" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
 
-    <section class="section projects" id="projects">
-      <div class="section__content">
-        <h2>Projects</h2>
-        <div class="project-list">
-          <article class="project-card">
-            <h3>Student Link Manager & URL Shortener</h3>
-            <p>A Flask and SQLite web application built during CodeAlpha internship training. It generates short codes for long URLs and supports redirection, data storage, and user-friendly sharing.</p>
-            <p>Live demo: <a href="https://agent-69fde491221880ca3c0--zippy-malasada-7cda06.netlify.app/" target="_blank">https://agent-69fde491221880ca3c0--zippy-malasada-7cda06.netlify.app/</a></p>
-            <a class="button button--secondary" href="assets/CodeAlpha_project" download>Download Project File</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section certificates" id="certifications">
-      <div class="section__content">
-        <h2>Certifications</h2>
-        <ul class="cert-list">
-          <li>IBM Certificate series</li>
-          <li>Artificial Intelligence training completion certificate</li>
-          <li>AICTE / CodeAlpha internship certificate</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="section__content">
-        <h2>Contact</h2>
-        <p>Reach out to discuss projects, collaborations, or career opportunities.</p>
-        <a class="button button--primary" href="mailto:jaswanth.jai@example.com">Email me</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Built from available documents, certificates, and project files.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

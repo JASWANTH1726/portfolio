@@ -1,18 +1,18 @@
 # Jaswanth Portfolio
 
-A static portfolio site generated from available files found in the user Downloads folder.
+A responsive personal portfolio built with HTML, CSS, and JavaScript.
 
-## Included files
-- `index.html` - main portfolio page
-- `styles.css` - responsive styling
-- `script.js` - small hover enhancement
-- `assets/resume.pdf` - copied resume PDF
-- `assets/profile.jpg` - profile photo from provided attachment
-- `assets/CodeAlpha_project` - copied project file from Downloads
-- `run_url_shortener.py` - sample Flask URL shortener project from CodeAlpha
+## Contents
+- `index.html` - portfolio sections, featured projects, certifications, and contact details
+- `styles.css` - responsive layout, theme, and animations
+- `script.js` - loading and scroll-reveal interactions
+- `resume-source.html` - editable source for the downloadable resume
+- `assets/resume.pdf` - current one-page resume
+- `assets/profile.jpg` - portfolio portrait
+- `assets/BFDA103575.jpg` - Bluestock Fintech internship certificate
+- `assets/CodeAlpha_project` and `run_url_shortener.py` - Student Link Manager project files
 
-## How to use
-1. Open `C:\Users\jaswa\Documents\JaswanthPortfolio\index.html` in your browser to view the portfolio site.
-2. Click `Download Resume` to view the copied resume.
-3. Use the `View Projects` section to learn about available assets.
-4. To run the example project, install Python dependencies and run `python run_url_shortener.py`.
+## Preview locally
+Open `index.html` in a browser, or run a static HTTP server from the repository root.
+
+The resume, certificate, GitHub, and project links are available directly from the portfolio page.
